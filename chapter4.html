@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 4 Quiz</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .answers label {
+      display: block;
+      margin: 0.5rem 0;
+    }
+    .result {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #e8f5e9;
+      border: 1px solid #66bb6a;
+      border-radius: 8px;
+    }
+    button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chapter 4 Quiz</h1>
+  <form id="quizForm">
+    <!-- Preguntas del capítulo 4 se insertarán aquí -->
+  </form>
+  <div class="result" id="result" style="display: none;"></div>
+  <script>
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const questions = document.querySelectorAll('.question');
+      let score = 0;
+      let output = '<h2>Your Results</h2>';
+      questions.forEach((q, index) => {
+        const correct = q.dataset.correct;
+        const selected = q.querySelector('input:checked');
+        const selectedValue = selected ? selected.value : 'None';
+        const isCorrect = selectedValue === correct;
+        if (isCorrect) score++;
+        output += `<p><strong>Question ${index + 1}:</strong> ` +
+          (isCorrect ? '✅ Correct' : `❌ Incorrect. Correct answer: ${correct}`) + '</p>';
+      });
+      output += `<p><strong>Total Score: ${score} / ${questions.length}</strong></p>`;
+      const resultBox = document.getElementById('result');
+      resultBox.innerHTML = output;
+      resultBox.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

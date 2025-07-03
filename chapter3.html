@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 3 Quiz</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .answers label {
+      display: block;
+      margin: 0.5rem 0;
+    }
+    .result {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #e8f5e9;
+      border: 1px solid #66bb6a;
+      border-radius: 8px;
+    }
+    button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chapter 3 Quiz</h1>
+  <form id="quizForm">
+    <div class="question" data-correct="C">
+      <h3>1. What is the purpose of "scoping" in a project or product?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q1" value="A"> A. To solely determine the marketing strategy for the product</label>
+        <label><input type="radio" name="q1" value="B"> B. To define only the financial constraints without considering other factors</label>
+        <label><input type="radio" name="q1" value="C"> C. To tell you what you will include, give clear expectations of the outcome, and serve as a clear outline for communication</label>
+        <label><input type="radio" name="q1" value="D"> D. To assign individual tasks without team collaboration</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="D">
+      <h3>2. According to the sources, when can scoping be done?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q2" value="A"> A. Only before the project or product gets started</label>
+        <label><input type="radio" name="q2" value="B"> B. Exclusively during the backlog refinement and planning sessions</label>
+        <label><input type="radio" name="q2" value="C"> C. Only when defining the problem for a smaller part of the project</label>
+        <label><input type="radio" name="q2" value="D"> D. All of the above, depending on the stage of the project or product development</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>3. What is the main pitfall mentioned when estimating work, beyond just the active work time?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q3" value="A"> A. Forgetting to account for team lunches</label>
+        <label><input type="radio" name="q3" value="B"> B. Overestimating the team's ability to multitask</label>
+        <label><input type="radio" name="q3" value="C"> C. Not accounting for time (travel, meetings, etc.), approvals, feedback loops, bugs, and errors</label>
+        <label><input type="radio" name="q3" value="D"> D. Limiting tasks to only the most straightforward ones</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="D">
+      <h3>4. Which prioritization matrix explicitly focuses on "urgency" as its primary criterion, rather than importance?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q4" value="A"> A. Impact-Effort Matrix</label>
+        <label><input type="radio" name="q4" value="B"> B. Kano Model</label>
+        <label><input type="radio" name="q4" value="C"> C. Impact-Feasibility Matrix</label>
+        <label><input type="radio" name="q4" value="D"> D. Eisenhower Matrix</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>5. What is a key principle of the Minimum Valuable Product (MVP) approach in prioritization?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q5" value="A"> A. To include as many features as possible to satisfy all users</label>
+        <label><input type="radio" name="q5" value="B"> B. To prioritize quantity of features over quality</label>
+        <label><input type="radio" name="q5" value="C"> C. To focus on small, polished features that work, rather than half-baked ones</label>
+        <label><input type="radio" name="q5" value="D"> D. To delay proving a concept until all resources are available</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>6. The Kano Model helps product teams prioritize initiatives by identifying which three types of initiatives?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q6" value="A"> A. Urgent, Important, and Delegated</label>
+        <label><input type="radio" name="q6" value="B"> B. High Impact, Low Effort, and High Feasibility</label>
+        <label><input type="radio" name="q6" value="C"> C. Basic, Excitement, and Performance</label>
+        <label><input type="radio" name="q6" value="D"> D. Must Have, Should Have, and Won't Have</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>7. What is a "UX Vision" defined as?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q7" value="A"> A. A detailed technical specification for user interfaces</label>
+        <label><input type="radio" name="q7" value="B"> B. A financial forecast for user experience investments</label>
+        <label><input type="radio" name="q7" value="C"> C. An aspirational, future-state view of an experience people will have with a product, service, team, or organization</label>
+        <label><input type="radio" name="q7" value="D"> D. A historical document outlining past user behaviors</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>8. What is the main purpose of the "Purpose Wheel" framework?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q8" value="A"> A. To calculate the exact return on investment for UX activities</label>
+        <label><input type="radio" name="q8" value="B"> B. To automate user feedback collection processes</label>
+        <label><input type="radio" name="q8" value="C"> C. To encourage generative conversations about future goals and ultimately create a foundation that the organization’s leadership can align on before sitting down to write out the statement that answers “the why”</label>
+        <label><input type="radio" name="q8" value="D"> D. To design user interfaces without direct user input</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>9. What does a UX Research Plan include, as a guideline or living document?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q9" value="A"> A. Only the budget allocation for marketing campaigns</label>
+        <label><input type="radio" name="q9" value="B"> B. Exclusively the final product specifications</label>
+        <label><input type="radio" name="q9" value="C"> C. Explanations of tactics, methods, timelines, scope, and responsibilities for user research</label>
+        <label><input type="radio" name="q9" value="D"> D. A fixed list of interview questions that cannot be changed</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>10. Which of the following is NOT listed as a benefit of using research plans?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q10" value="A"> A. Streamlined processes and structure</label>
+        <label><input type="radio" name="q10" value="B"> B. Aligned and engaged stakeholders</label>
+        <label><input type="radio" name="q10" value="C"> C. Guaranteeing flawless project execution without any risks</label>
+        <label><input type="radio" name="q10" value="D"> D. Documentation of research efforts</label>
+      </div>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+  <div class="result" id="result" style="display: none;"></div>
+
+  <script>
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const questions = document.querySelectorAll('.question');
+      let score = 0;
+      let output = '<h2>Your Results</h2>';
+
+      questions.forEach((q, index) => {
+        const correct = q.dataset.correct;
+        const selected = q.querySelector('input:checked');
+        const selectedValue = selected ? selected.value : 'None';
+        const isCorrect = selectedValue === correct;
+
+        if (isCorrect) score++;
+
+        output += `<p><strong>Question ${index + 1}:</strong> ` +
+          (isCorrect ? '✅ Correct' : `❌ Incorrect. Correct answer: ${correct}`) + '</p>';
+      });
+
+      output += `<p><strong>Total Score: ${score} / ${questions.length}</strong></p>`;
+      const resultBox = document.getElementById('result');
+      resultBox.innerHTML = output;
+      resultBox.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

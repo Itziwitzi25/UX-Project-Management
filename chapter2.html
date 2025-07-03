@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 2 Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .answers label {
+      display: block;
+      margin: 0.5rem 0;
+    }
+    .result {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #e8f5e9;
+      border: 1px solid #66bb6a;
+      border-radius: 8px;
+    }
+    button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chapter 2 Quiz</h1>
+  <form id="quizForm">
+    <div class="question" data-correct="D">
+      <h3>1. Which of the following is NOT one of the core values of the Agile Manifesto incorporated by the Scrum framework?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q1" value="A"> A. Individuals and interactions over processes and tools</label>
+        <label><input type="radio" name="q1" value="B"> B. Working software over comprehensive documentation</label>
+        <label><input type="radio" name="q1" value="C"> C. Responding to change over following a plan</label>
+        <label><input type="radio" name="q1" value="D"> D. Strict adherence to contracts over customer collaboration</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="B">
+      <h3>2. What is the "Sprint" in Scrum primarily described as?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q2" value="A"> A. A flexible period that can last indefinitely based on task completion</label>
+        <label><input type="radio" name="q2" value="B"> B. A fixed-length event of one month or less to create consistency, where ideas are turned into value</label>
+        <label><input type="radio" name="q2" value="C"> C. A meeting to discuss only long-term strategic goals</label>
+        <label><input type="radio" name="q2" value="D"> D. The final stage of product development before launch</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="B">
+      <h3>3. During which Scrum event do items from the Product Backlog get broken into smaller pieces, refined, and estimated to become more actionable for a Sprint?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q3" value="A"> A. Sprint Planning</label>
+        <label><input type="radio" name="q3" value="B"> B. Backlog Refinement</label>
+        <label><input type="radio" name="q3" value="C"> C. Daily Scrum</label>
+        <label><input type="radio" name="q3" value="D"> D. Sprint Review</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>4. For whom is the Sprint Backlog a plan "by and for"?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q4" value="A"> A. The Product Owner</label>
+        <label><input type="radio" name="q4" value="B"> B. The Scrum Master</label>
+        <label><input type="radio" name="q4" value="C"> C. The Developers</label>
+        <label><input type="radio" name="q4" value="D"> D. The Stakeholders</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>5. What is the purpose of the "Retrospective" meeting in Scrum?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q5" value="A"> A. To inspect the outcome of the sprint and present results to stakeholders</label>
+        <label><input type="radio" name="q5" value="B"> B. To move work items from the Product Backlog into the Sprint Backlog</label>
+        <label><input type="radio" name="q5" value="C"> C. To understand what went well and what should be improved in the next sprint, including individuals' moods and feelings</label>
+        <label><input type="radio" name="q5" value="D"> D. To highlight work done and roadblocks for the current day</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="B">
+      <h3>6. The Lean approach is based on principles designed to achieve what primary goal?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q6" value="A"> A. To increase project documentation</label>
+        <label><input type="radio" name="q6" value="B"> B. To eliminate waste and improve company processes</label>
+        <label><input type="radio" name="q6" value="C"> C. To strictly follow a predefined plan</label>
+        <label><input type="radio" name="q6" value="D"> D. To prioritize deliverables over experience</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>7. When a new project or product is about to start, what initial action is emphasized as crucial?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q7" value="A"> A. Immediately starting development to save time</label>
+        <label><input type="radio" name="q7" value="B"> B. Delegating all initial checks to junior team members</label>
+        <label><input type="radio" name="q7" value="C"> C. Taking time and making sure you understand it</label>
+        <label><input type="radio" name="q7" value="D"> D. Announcing the project to the public before internal review</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>8. What is a "roadmap" described as in the context of project or product development?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q8" value="A"> A. A rigid, unchangeable document of technical specifications</label>
+        <label><input type="radio" name="q8" value="B"> B. A detailed financial plan for budget allocation</label>
+        <label><input type="radio" name="q8" value="C"> C. A strategic, living artifact that aligns, prioritizes, and communicates the vision and plan of a project or product</label>
+        <label><input type="radio" name="q8" value="D"> D. A historical record of past project failures</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="B">
+      <h3>9. The Double Diamond Framework helps navigate project or product development. Which two phases constitute the "Problem Space"?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q9" value="A"> A. Develop and Deliver</label>
+        <label><input type="radio" name="q9" value="B"> B. Discover and Define</label>
+        <label><input type="radio" name="q9" value="C"> C. Discover and Develop</label>
+        <label><input type="radio" name="q9" value="D"> D. Define and Deliver</label>
+      </div>
+    </div>
+
+    <div class="question" data-correct="C">
+      <h3>10. In Assumption Mapping, when are assumptions typically created?</h3>
+      <div class="answers">
+        <label><input type="radio" name="q10" value="A"> A. After the project has been fully launched and validated</label>
+        <label><input type="radio" name="q10" value="B"> B. Before any data input or discovery has occurred</label>
+        <label><input type="radio" name="q10" value="C"> C. Based on data input from the discovery phase, but not yet validated</label>
+        <label><input type="radio" name="q10" value="D"> D. Only during the final testing phase of a product</label>
+      </div>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+  <div class="result" id="result" style="display: none;"></div>
+
+  <script>
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const questions = document.querySelectorAll('.question');
+      let score = 0;
+      let output = '<h2>Your Results</h2>';
+
+      questions.forEach((q, index) => {
+        const correct = q.dataset.correct;
+        const selected = q.querySelector('input:checked');
+        const selectedValue = selected ? selected.value : 'None';
+        const isCorrect = selectedValue === correct;
+
+        if (isCorrect) score++;
+
+        output += `<p><strong>Question ${index + 1}:</strong> ` +
+          (isCorrect ? '✅ Correct' : `❌ Incorrect. Correct answer: ${correct}`) + '</p>';
+      });
+
+      output += `<p><strong>Total Score: ${score} / ${questions.length}</strong></p>`;
+      const resultBox = document.getElementById('result');
+      resultBox.innerHTML = output;
+      resultBox.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
